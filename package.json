@@ -1,5 +1,5 @@
 {
-  "name": "galosh.js",
+  "name": "ls",
   "version": "1.0.0",
   "description": "This assignment will help you learn to create an installable Node.js command line utility.",
   "main": "index.js",
@@ -10,10 +10,19 @@
     "type": "git",
     "url": "git+https://github.com/comp426-2023-spring/a02-functions-wastilla.git"
   },
-  "author": "",
+  "bin": {
+    "galosh.js": "./cli.js"
+  },
+  "type": "module",
+  "author": "will astilla",
   "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/comp426-2023-spring/a02-functions-wastilla/issues"
   },
-  "homepage": "https://github.com/comp426-2023-spring/a02-functions-wastilla#readme"
+  "homepage": "https://github.com/comp426-2023-spring/a02-functions-wastilla#readme",
+  "dependencies": {
+    "minimist": "^1.2.8",
+    "moment-timezone": "^0.5.40",
+    "node-fetch": "^3.3.0"
+  }
 }
