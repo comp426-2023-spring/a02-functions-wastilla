@@ -30,4 +30,12 @@ if (ar.j) {
 	console.log(data);
 	process.exit(0);
 }
-console.log(data) 
+
+if(ar.d == 0){
+  console.log("today.");
+  } else if (ar.d > 1){ 
+  console.log("in " + ar.d + " days.");
+  } 
+  else {
+  console.log("tomorrow.");
+} 
